@@ -1,0 +1,1 @@
+export const APP_SIDEBAR_MENU = 'APP_SIDEBAR_MENU'
