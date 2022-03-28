@@ -61,7 +61,7 @@ export default {
 
         // 用户名下拉菜单选择事件
         const router = useRouter();
-        const handleCommand = (command) => {
+        const handleCommand = (command: string) => {
             if (command == "loginout") {
                 signOutClear()
                 router.push("/login");
