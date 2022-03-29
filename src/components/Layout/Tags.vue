@@ -25,7 +25,7 @@
     </div>
 </template>
 
-<script>
+<script lang="ts">
 import { computed, watch } from "vue";
 import { useStore } from "vuex";
 import { onBeforeRouteUpdate, useRoute, useRouter } from "vue-router";
@@ -113,7 +113,7 @@ export default {
         };
     },
 };
-</script lang="ts">
+</script>
 
 
 <style>
