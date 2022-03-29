@@ -1,9 +1,10 @@
 import { RouteRecordRaw } from "vue-router";
+import {shallowRef} from 'vue'
 import Layout from "@/components/Layout/Index.vue";
 export const asyncRouters: Array<RouteRecordRaw> = [
     {
         path: '/list',
-        component: Layout,
+        component: shallowRef(Layout),
         name: 'accountManage',
         redirect: '/list/a',
         meta: {
@@ -33,7 +34,7 @@ export const asyncRouters: Array<RouteRecordRaw> = [
     },
     {
         path: '/user',
-        component: Layout,
+        component: shallowRef(Layout),
         name: 'userManage',
         redirect: '/user/c',
         meta: {
